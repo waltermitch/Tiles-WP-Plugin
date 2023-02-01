@@ -1,0 +1,101 @@
+.lili-header{
+	background: #af2c18;
+	color: white;
+	padding: 80px 0;
+	position: relative;
+	width: 100%;
+	text-align: center;
+
+	font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+#main-header{
+	top: 0 !important;
+}
+
+.simulator-container{
+	position: relative;
+	z-index: 0;
+	overflow-y: hidden;
+	background-color: white;
+
+	display: flex;
+
+	padding-bottom: 20px;
+	width: 100%;
+
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#view-environments-container{
+	padding: 0 25px 0 0;
+	flex-grow: 1;
+
+	text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+#environments{
+	position: relative;
+}
+
+
+#environments .env-button{
+	position: absolute;
+	background: #232323;
+	color: white;
+
+	z-index: 100;
+	font-size: 30px;
+	opacity: 0.7;
+
+	width: auto;
+	height: auto;
+
+	cursor: pointer;
+}
+
+#environments.tile-view .env-button{
+	display: none;
+}
+
+#environments .env-button:hover{
+	opacity: 1;
+}
+
+#environments #close-env-button{
+	right: 0;
+}
+
+#environments #expand-env-button{
+	right: 0;
+	bottom: 0;
+
+	font-size: 40px;
+}
+
+#environments.expanded{
+	
+}
+
+
+
+#tiled-image-container{
+	width: 100%;
+	height: 391px;
+}
+
+
+
+@media screen and (max-width: 1100px){
+	#view-environments-container{
+		padding: 0 10px 0 0;
+	}
+
+}

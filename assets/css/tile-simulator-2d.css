@@ -1,0 +1,557 @@
+/* HEXAGON */
+/*.env-container .background::before{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+
+	background-color: #ebebeb;
+}
+
+.env-container .background::before{
+	content: '';
+	position: absolute;
+
+	background: inherit;
+	background-color: transparent;
+	background-position: 14.6% 9%;
+}*/
+
+/*body{
+	overflow-y: scroll !important;
+}*/
+
+
+/* TILED */
+
+#tiled-wall-container .background{
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+
+	background-color: #ebebeb;
+}
+
+
+
+
+/* BEDROOM */
+
+#bedroom-simulator .bg-container .background{
+	-moz-background-size: 123px;
+	  -o-background-size: 123px;
+	     background-size: 123px;
+}
+
+#bedroom-simulator .bg-container.big-tiles .background{
+	-moz-background-size: 100px;
+	  -o-background-size: 100px;
+	     background-size: 100px;
+}
+
+
+#bedroom-floor-hover,
+#bedroom-floor-container{
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+}
+
+/*#bedroom-floor-container{
+	top: 37px;
+	left: 1px;
+}*/
+
+#bedroom-floor-container .background{
+	width: 204%;
+	height: 220%;
+	top: 95%;
+	left: -41%;
+
+    transform-origin: top left;
+    	-webkit-transform-origin: top left;
+    	-ms-transform-origin: top left;
+    	-moz-transform-origin: top left;
+    	-o-transform-origin: top left;
+
+	transform: rotateZ(-15.5deg) rotateY(69deg) rotateX(72deg);
+		-webkit-transform: rotateZ(-15.5deg) rotateY(69deg) rotateX(72deg);
+		-moz-transform: rotateZ(-15.5deg) rotateY(69deg) rotateX(72deg);
+}
+
+
+
+
+
+#living-room-simulator .env-image-container img{
+	margin: 4%;
+	margin-bottom: 0;
+	width: 92%;
+}
+
+
+#living-room-simulator .bg-container .background{
+	-moz-background-size: 14.8%;
+	  -o-background-size: 14.8%;
+	     background-size: 14.8%;
+}
+
+#living-room-simulator .bg-container.big-tiles .background{
+	-moz-background-size: 18%;
+	  -o-background-size: 18%;
+	     background-size: 18%;
+
+    background-position: 1% 0%;
+}
+
+
+
+#living-room-wall-container1 .background{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+
+	/*background: red;*/
+}
+
+#living-room-floor-hover,
+#living-room-floor-container{
+	-webkit-clip-path: polygon( 0 88%, 100% 88%, 100% 100%, 0 100% );
+	        clip-path: polygon( 0 88%, 100% 88%, 100% 100%, 0 100% );
+}
+
+#living-room-floor-container .background{
+	width: 100%;
+	height: 100%;
+	top: 88%;
+	left: 0;
+
+    transform-origin: top;
+    	-webkit-transform-origin: top;
+    	-ms-transform-origin: top;
+    	-moz-transform-origin: top;
+    	-o-transform-origin: top;
+
+	transform: rotateX(78deg) rotateY(0deg) rotateZ(-0.8deg);
+		-webkit-transform: rotateX(78deg) rotateY(0deg) rotateZ(-0.8deg);
+		-moz-transform: rotateX(78deg) rotateY(0deg) rotateZ(-0.8deg);	
+}
+
+
+/* KITCHEN */
+
+#kitchen-simulator .bg-container .background{
+	-moz-background-size: 6%;
+	  -o-background-size: 6%;
+	     background-size: 6%;
+
+	background-position: 0.2% 1.5%;
+}
+
+#kitchen-simulator .bg-container.big-tiles .background{
+	-moz-background-size: 9.72%;
+	  -o-background-size: 9.72%;
+	     background-size: 9.72%;
+
+
+    background-position: -0.2% -0.6%;
+}
+
+#kitchen-wall-hover,
+#kitchen-wall-container-1,
+#kitchen-wall-container-2{
+	-webkit-clip-path: polygon( 0 0, 100% 0, 100% 55%, 0 55% );
+	        clip-path: polygon( 0 0, 100% 0, 100% 55%, 0 55% );
+}
+
+
+#kitchen-wall-container-1 .background{
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	left: 0;
+
+}
+
+#kitchen-floor-hover,
+#kitchen-floor-container-1,
+#kitchen-floor-container-2{
+	-webkit-clip-path: polygon( 0 73%, 100% 73%, 100% 100%, 0 100% );
+	        clip-path: polygon( 0 73%, 100% 73%, 100% 100%, 0 100% );
+}
+
+/*#kitchen-floor-container .background{
+	width: 76%;
+	height: 200%;
+	top: 73%;
+	left: 14%;
+
+	transform-origin: top;
+    	-webkit-transform-origin: top;
+    	-ms-transform-origin: top;
+    	-moz-transform-origin: top;
+    	-o-transform-origin: top;
+
+    transform: perspective(300px) rotateX(78deg);
+		-webkit-transform: perspective(300px) rotateX(78deg);
+		-moz-transform: perspective(300px) rotateX(78deg);
+
+
+
+
+}*/
+
+
+
+
+/* BATHROOM */
+
+
+#bathroom-simulator .wall-container.bg-container .background{
+	-moz-background-size: 39%;
+	  -o-background-size: 39%;
+	     background-size: 39%;
+
+    background-position: 4% 3%;
+}
+
+#bathroom-simulator .bg-container .background{
+	-moz-background-size: 60px;
+	  -o-background-size: 60px;
+	     background-size: 60px;
+}
+
+
+#bathroom-simulator .wall-container.bg-container.big-tiles .background{
+    -moz-background-size: 54.6%;
+      -o-background-size: 54.6%;
+         background-size: 54.6%;
+
+    background-position: -8% 3.3%;
+}
+
+#bathroom-simulator .bg-container.big-tiles .background{
+	-moz-background-size: 75px;
+	  -o-background-size: 75px;
+	     background-size: 75px;
+}
+
+#bathroom-wall-hover1,
+#bathroom-wall-container-1,
+#bathroom-wall-container-2{
+    -webkit-clip-path: polygon( 0 0, 100% 0, 100% 75%, 0 75% );
+            clip-path: polygon( 0 0, 100% 0, 100% 75%, 0 75% );
+}
+
+#bathroom-wall-container-1 .background{
+	width: 24%;
+	height: 46%;
+	top: 10%;
+	left: 25%;
+}
+
+
+
+#bathroom-floor-hover,
+#bathroom-floor-container-1,
+#bathroom-floor-container-2{
+    -webkit-clip-path: polygon( 0 72%, 100% 72%, 100% 100%, 0 100%);
+            clip-path: polygon( 0 72%, 100% 72%, 100% 100%, 0 100%);
+}
+
+#bathroom-floor-container .background{
+	width: 77%;
+	height: 39%;
+	top: 75%;
+	left: 18.5%;
+
+	transform-origin: top;
+		-webkit-transform-origin: top;
+		-ms-transform-origin: top;
+		-moz-transform-origin: top;
+		-o-transform-origin: top;
+	
+
+    transform: perspective(259px) rotateX(68.5deg);
+		-webkit-transform: perspective(259px) rotateX(68.5deg);
+		-moz-transform: perspective(259px) rotateX(68.5deg);
+}
+
+
+
+/* COMMERCIAL */
+
+#commercial-simulator .bg-container .background{
+	-moz-background-size: 7.5%;
+	  -o-background-size: 7.5%;
+	     background-size: 7.5%;
+
+    background-position: -0.3% -2.5%;
+    
+}
+
+#commercial-simulator .bg-container.big-tiles .background{
+	-moz-background-size: 9.9%;
+	  -o-background-size: 9.9%;
+	     background-size: 9.9%;
+
+	background-position: -5% 3%;
+}
+
+#commercial-wall-hover1,
+#commercial-wall-container-1,
+#commercial-wall-container-2{
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 71%, 0 71%);
+	        clip-path: polygon(0 0, 100% 0, 100% 71%, 0 71%);
+
+}
+
+#commercial-wall-container-1 .background{
+	width: 71%;
+	height: 56%;
+	top: 15%;
+	right: 29%;
+
+    transform-origin: right;
+    	-webkit-transform-origin: right;
+    	-ms-transform-origin: right;
+    	-moz-transform-origin: right;
+    	-o-transform-origin: right;
+
+    transform: perspective(100px) rotateY(1.5deg);
+    	-webkit-transform: perspective(100px) rotateY(1.5deg);
+    	-moz-transform: perspective(100px) rotateY(1.5deg);
+
+}
+
+
+
+#commercial-floor-hover,
+#commercial-floor-container-1,
+#commercial-floor-container-2{
+    -webkit-clip-path: polygon(0 71%, 100% 71%, 100% 100%, 0 100%);
+            clip-path: polygon(0 71%, 100% 71%, 100% 100%, 0 100%);
+
+}
+
+#commercial-floor-container .background{
+	width: 70%;
+	height: 23%;
+	top: 71%;
+	right: 29%;
+
+    transform-origin: top;
+    	-webkit-transform-origin: top;
+    	-ms-transform-origin: top;
+    	-moz-transform-origin: top;
+    	-o-transform-origin: top;
+
+    transform: perspective(100px) rotateX(41deg);
+		-webkit-transform: perspective(100px) rotateX(41deg);
+		-moz-transform: perspective(100px) rotateX(41deg);
+
+}
+
+
+.env-container{
+	display: none;
+	position: relative;
+	overflow: hidden;
+	font-size: 0;
+
+	z-index: 50;
+}
+
+.env-container.active{
+	display: inherit;
+}
+
+.env-container .env-image-container{
+	z-index: 100;
+	position: relative;
+	display: -ms-grid;
+	display: grid;
+}
+
+
+.env-container .hover,
+.env-container .bg-container{
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+	top: 0;
+	left: 0;
+
+	padding: 0 !important;
+
+	z-index: 50;
+}
+
+
+.env-container .wall-container{
+	z-index: 60;
+}
+
+.env-container .hover{
+	z-index: 150;
+	cursor: url( '../cursor/paintbucket.cur' ), pointer;
+}
+
+.env-container .wall-hover{
+	z-index: 160;
+}
+
+.env-container .env-image-container img{
+	width: 100%;
+	/*min-width: 400px;*/
+}
+
+.env-container .bg-container{
+	transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+}
+.env-container .bg-container.hovered{
+	opacity: 0.5;
+}
+
+.env-container div.bg-container.selected{
+	opacity: 0.5;
+}
+
+.env-container .bg-container .background{
+	position: absolute;
+	-moz-background-size: 20%;
+	  -o-background-size: 20%;
+	     background-size: 20%;
+
+	-webkit-perspective: 6000px;
+	   -moz-perspective: 6000px;
+	        perspective: 6000px;
+}
+
+.env-container .bg-container .border-background{
+	position: absolute;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	display: none;
+
+	-moz-background-size: 10%;
+	  -o-background-size: 10%;
+	     background-size: 10%;
+}
+
+.simulator-container[data-tile-shape="square"].border-active .env-container .bg-container .border-background{
+	display: block;
+}
+
+.env-container .bg-container .border-background.corner{
+	background-repeat: no-repeat;
+}
+
+.env-container .bg-container .border-background[data-bg-part="top"]{
+	background-repeat: repeat-x;
+}
+
+.env-container .bg-container .border-background[data-bg-part="bottom"]{
+	bottom: 0;
+
+	background-repeat: repeat-x;
+	background-position: 0 100%;
+
+}
+
+.env-container .bg-container .border-background[data-bg-part="left"]{
+	background-repeat: repeat-y;
+}
+
+.env-container .bg-container .border-background[data-bg-part="right"]{
+	right: 0;
+
+	background-repeat: repeat-y;
+	background-position: 100% 0;
+}
+
+.env-container .bg-container .border-background[data-bg-part="corner-tr"]{
+	right: 0;
+	background-position: 100% 0;
+}
+
+.env-container .bg-container .border-background[data-bg-part="corner-bl"]{
+	bottom: 0;
+	background-position: 0 100%;
+}
+
+.env-container .bg-container .border-background[data-bg-part="corner-br"]{
+	bottom: 0;
+	right: 0;
+	background-position: 100% 100%;
+}
+
+
+
+
+.env-container .wall-container .background,
+.env-container .wall-container.three-bg-container{
+
+	background-color: beige;
+}
+
+.env-container .floor-container .background,
+.env-container .floor-container.three-bg-container{
+	background-color: beige;
+}
+
+
+
+.env-container .three-bg-container.small.big-tiles{
+	display: none;
+}
+
+.env-container .three-bg-container.big:not(.big-tiles){
+	display: none;
+}
+
+
+
+
+.artise-button{
+	background: black;
+	outline: none;
+	border: none;
+	color: white;
+	font-family: 'Raleway';
+	text-transform: uppercase;
+	font-weight: bolder;
+	padding: 7px;
+	min-width: 100px;
+	letter-spacing: 3px;
+	border: 1px solid transparent;
+	line-height: 1.5;
+
+	cursor: pointer;
+
+	-webkit-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+}
+
+.artise-button:hover{
+	color: black;
+	background: white;
+	border: 1px solid;
+	/*color: black;*/
+}
+
+.artise-button a{
+    color: white;
+}
+
+.artise-button:hover a{
+    color: black;
+}

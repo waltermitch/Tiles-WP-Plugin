@@ -1,0 +1,57 @@
+body:not(.loaded) {
+  overflow: hidden;
+}
+
+#loader-container {
+  position: fixed;
+  z-index: 1000000;
+  background: white;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+}
+
+body.loaded #loader-container {
+  display: none;
+}
+
+#loader-container .loader-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+#loader-container #loader-logo {
+  width: 200px;
+  display: initial;
+}
+
+#loader-container .progress-bar {
+  height: 2px;
+  background: #dbd3d3;
+  width: 400px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#loader-container .progress-bar .progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #a10c12;
+  width: 0%;
+
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+}

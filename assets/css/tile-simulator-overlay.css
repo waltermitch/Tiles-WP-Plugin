@@ -1,0 +1,232 @@
+.simulator-overlay-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 100000;
+	visibility: collapse;
+	opacity: 0;
+	overflow-y: auto;
+
+	background: rgba( 0, 0, 0, 0.5 );
+
+	transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+}
+
+.simulator-overlay-container.open{
+	visibility: visible;
+	opacity: 1;
+}
+
+.simulator-overlay-container .simulator-overlay-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+
+    -ms-transform: translate(-50%, -50%);
+
+        transform: translate(-50%, -50%);
+    	-webkit-transform: translate(-50%, -50%);
+    	-moz-transform: translate(-50%, -50%);
+    	-o-transform: translate(-50%, -50%);
+
+}
+
+.env-fullscreen-button{
+	position: absolute;
+	z-index: 100;
+	font-size: 33px;
+	cursor: pointer;
+	opacity: 0.8;
+	width: auto;
+	height: auto;
+	color: white;
+    background: #232323;
+}
+
+.env-fullscreen-button:hover{
+	opacity: 1;
+}
+
+#contract-env-button{
+	bottom: 0;
+	right: 0;
+}
+
+
+/* SAVE OVERLAY */
+#save-overlay-container .simulator-overlay-content{
+	background: transparent;
+}
+
+#tile-save-canvas{
+	background-color: white;
+}
+
+#save-close-button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: 10px;
+	padding: 2px;
+	font-size: 25px;
+	border-radius: 50%;
+
+	background: black;
+	color: white;
+	cursor: pointer;
+	z-index: 10;
+
+	transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+}
+
+#save-close-button:hover{
+	-webkit-transform: scale(1.1);
+	   -moz-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	     -o-transform: scale(1.1);
+	        transform: scale(1.1);
+}
+
+/* SUBMIT OVERLAY */
+
+#submit-details-overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	padding: 40px;
+	opacity: 0;
+	visibility: collapse;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
+
+	transition: all 0.3s ease-out;
+		-webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+}
+
+#submit-details-back-button{
+	color: #ac292c;
+	cursor: pointer;
+	margin-bottom: 10px;
+}
+
+#submit-details-back-button:hover{
+	opacity: 0.8;
+}
+
+#submit-details-back-button .dashicons{
+	vertical-align: middle;
+	font-size: 18px;
+	margin-left: -12px;
+}
+
+#submit-details-overlay h1{
+	padding: 0;
+}
+
+#save-overlay-container.open #submit-details-overlay.shown{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+/*#submit-button{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}*/
+
+#submit-button{
+	background: #af2c18;
+	width: auto;
+}
+
+#submit-button:hover{
+	background: none;
+	color: #af2c18;
+	background: white;
+}
+
+
+/* SUBMIT FORM */
+#submit-details-overlay table{
+	width: 100%;
+}
+
+#submit-details-overlay th{
+	width: 200px;
+	text-align: left;
+}
+
+#submit-details-overlay input,
+#submit-details-overlay textarea,
+#submit-details-overlay select{
+	width: 100%;
+	padding: 10px;
+	margin: 10px 0;
+	border: solid 1px #c9c9c9;
+}
+
+#submit-details-overlay input.invalid,
+#submit-details-overlay textarea.invalid{
+	border-color: red;
+	color: red;
+}
+
+#submit-details-overlay th small{
+	color: red;
+}
+
+@media screen and (max-width: 700px){
+
+	#save-overlay-container.submit-details .simulator-overlay-content{
+		height: 95%;
+		width: 95%;
+		-webkit-transform: translate(-50%, -50%)  !important;
+		   -moz-transform: translate(-50%, -50%)  !important;
+		    -ms-transform: translate(-50%, -50%)  !important;
+		     -o-transform: translate(-50%, -50%)  !important;
+		        transform: translate(-50%, -50%)  !important;
+	}
+
+	#submit-button{
+		width: auto;
+		font-size: 3rem;
+		padding: 2rem;
+	}
+
+	#save-overlay-container.submit-details #submit-button,
+	#save-overlay-container.submit-details #tile-save-canvas{
+		display: none;
+	}
+
+	#submit-details-overlay{
+		padding: 1rem;
+	}
+
+	#submit-details-overlay tbody,
+	#submit-details-overlay tr,
+	#submit-details-overlay th,
+	#submit-details-overlay td{
+		display: block;
+	}
+
+	#submit-details-overlay .g-recaptcha > div{
+		width: 100%;
+	}
+
+
+}

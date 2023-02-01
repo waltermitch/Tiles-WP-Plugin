@@ -1,0 +1,72 @@
+.d-inline-block{
+	display: inline-block;
+	vertical-align: top;
+}
+
+.or-container{
+	padding: 3rem 3rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+
+.tile-color-icon{
+	display: inline-block;
+	padding: 1rem;
+	border-radius: 1rem;
+	cursor: pointer;
+	border: 1px solid #d0d0d0;
+}
+
+
+
+.tile-color-icon .dashicons{
+	font-size: 4rem;
+	color: white;
+	width: auto;
+	height: auto;
+}
+
+.tile-color-icon[style="background-color: #fff"]  .dashicons,
+.tile-color-icon[style="background-color: rgb(255, 255, 255);"]  .dashicons{
+	color: gray;
+}
+
+.wp-picker-container .wp-color-result{
+	display: none;
+}
+
+.wp-picker-container .wp-picker-input-wrap{
+	display: block;
+}
+
+
+.tile-img-icon{
+	border-radius: 1rem;
+	width: 6rem;
+	height: 6rem;
+	cursor: pointer;
+	border: 1px solid #d0d0d0;
+	background-size: cover;
+	background-position: center;
+}
+
+.tile-img-icon .tile-img-field{
+	display: none;
+}
+
+.color-field-container{
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+	-webkit-filter: blur(2px);
+	        filter: blur(2px);
+}
+
+.color-field-container.active,
+.color-field-container:hover{
+	-webkit-filter: unset;
+	        filter: unset;
+}

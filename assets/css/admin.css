@@ -1,0 +1,40 @@
+body.post-type-artise-tiles .column-featured-image{
+	width: 150px;
+
+}
+
+body.post-type-artise-tile-colors .column-artise-tile-color{
+	width: 60px;
+}
+
+body.post-type-artise-tile-colors .artise-tile-color-box{
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+	background-size: cover !important;
+	background-position: center !important;
+	
+}
+
+body.post-type-artise-submissions .column-featured-image{
+	width: 150px;
+}
+
+/* BLOCKUI */
+.blockUI.blockOverlay{
+	background-color: rgba( 255, 255, 255, 0.6 ) !important;
+	opacity: 1 !important;
+}
+
+.blockUI.blockOverlay::before{
+	content: url(../images/misc/ellipsis.svg);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+}

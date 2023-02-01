@@ -1,0 +1,223 @@
+#tile-mask-box{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+#preview-column{
+	width: 200px;
+	height: 200px;
+    min-width: 200px;
+
+	position: relative;
+	
+	-webkit-transform-origin: top;
+	   -moz-transform-origin: top;
+	    -ms-transform-origin: top;
+	     -o-transform-origin: top;
+	        transform-origin: top;
+}
+
+#preview-column canvas{
+	-webkit-border-radius: 25px;
+	   -moz-border-radius: 25px;
+	        border-radius: 25px;
+	position: absolute;
+}
+
+#preview-column #preview-grout{
+	z-index: 100;
+}
+
+#artise_tile_mask.no-grout #preview-column #preview-grout{
+	display: none;
+}
+
+#settings-column{
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	   -moz-box-flex: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+#background-button{
+	padding: 1px;
+    -webkit-border-radius: 20%;
+       -moz-border-radius: 20%;
+            border-radius: 20%;
+    position: relative;
+}
+
+#background-button canvas{
+	-webkit-border-radius: 20%;
+	   -moz-border-radius: 20%;
+	        border-radius: 20%;
+}
+
+#artise_tile_mask.no-bg #background-button::before{
+	content: 'No BG';
+    position: absolute;
+    padding: 3px 0;
+    width: 100%;
+
+    color: red;
+    white-space: normal;
+    line-height: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#tile-masks-container{
+	margin-top: 10px;
+}
+
+#tile-masks-container a{
+	border: none;
+	outline: none;
+	background: none;
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	        box-shadow: none;
+	position: relative;
+	height: 100px;
+}
+
+#tile-masks-container a .tile-mask{
+	
+	transition: all 0.2s ease-out;
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+}
+
+#tile-masks-container a .tile-mask:hover{
+	-ms-transform: scale( 1.1 );
+	    transform: scale( 1.1 );
+		-webkit-transform: scale( 1.1 );
+		-moz-transform: scale( 1.1 );
+		-o-transform: scale( 1.1 );
+}
+
+#tile-masks-container a .remove-button{
+	position: absolute;
+	background: #0085ba;
+	color: white;
+	padding: 1px 0 0 1px;
+	-webkit-border-radius: 50%;
+	   -moz-border-radius: 50%;
+	        border-radius: 50%;
+	top: -3px;
+	right: 2px;
+	opacity: 0;
+
+	transition: all 0.2s ease-out;
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+}
+
+#tile-masks-container a:hover .remove-button{
+	opacity: 0.7;
+}
+
+#tile-masks-container a:hover .remove-button:hover{
+	opacity: 1;
+}
+
+
+
+
+/* COLORS GRID */
+
+#color-grid{
+	font-size: 0;
+}
+
+#color-grid .tile-color-box{
+	width: 50px;
+	height: 50px;
+	margin: 4px;
+	-webkit-border-radius: 20%;
+	   -moz-border-radius: 20%;
+	        border-radius: 20%;
+
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	background-size: cover !important;
+	background-position: center !important;
+}
+
+#color-grid .tile-color-box:hover{
+	z-index: 10;
+
+	-ms-transform: scale( 1.2 );
+
+	    transform: scale( 1.2 );
+		-webkit-transform: scale( 1.2 );
+		-moz-transform: scale( 1.2 );
+		-o-transform: scale( 1.2 );
+}
+
+#color-grid .tile-color-box[data-color-id="-1"]{
+	border: solid 1px black;
+	position: relative;
+}
+
+#color-grid .tile-color-box[data-color-id="-1"]::before{
+	content: 'No BG';
+	position: absolute;
+	width: 100%;
+
+	color: red;
+	font-size: 14px;
+	line-height: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+
+#color-grid .tile-color-box::after{
+	content: attr( data-color-name );
+	font-size: 12px;
+	position: absolute;
+	background: black;
+	color: white;
+
+	left: -webkit-calc(100% + 5px);
+	left: -moz-calc(100% + 5px);
+	left: calc(100% + 5px);
+
+	z-index: 10;
+	padding: 5px 10px;
+	line-height: 100%;
+	z-index: 1000;
+
+	opacity: 0;
+	visibility: collapse;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+
+}
+
+#color-grid .tile-color-box:hover::after{
+	opacity: 1;
+	visibility: visible;
+
+}
+
+
+#color-grid .tile-color-box .tile-color-img{
+	display: none;
+}
